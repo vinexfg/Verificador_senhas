@@ -19,3 +19,10 @@ class Password:
             print('A senha deve conter pelo menos um caractere especial: !, @, #, %, &, *')
             return False
         return True
+
+    def cheker_char(self, password):
+        if any(char.isupper() for char in password):
+            return True
+        else:
+            return False
+        
