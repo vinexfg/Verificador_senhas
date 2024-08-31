@@ -9,6 +9,7 @@ while True:
 
     if checker_password.checker(password_entered):
         if checker_password.checker_especial(password_entered):
-            print('Password valid')
+            if checker_password.cheker_char(password_entered):
+                print('Password valido')
     else:
         print('Password invalid')
